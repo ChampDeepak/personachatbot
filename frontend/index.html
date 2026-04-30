@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scaler Mentors — Ask a Question</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <h1>Scaler Mentors</h1>
+        <p class="subtitle">Pick a mentor, ask anything.</p>
+      </header>
+
+      <section class="picker" aria-label="Choose a mentor">
+        <label class="card" data-person="kshitij">
+          <input type="radio" name="person" value="kshitij" checked />
+          <span class="card-name">Kshitij</span>
+          <span class="card-role">Head of Instructors, Scaler</span>
+        </label>
+        <label class="card" data-person="anshuman">
+          <input type="radio" name="person" value="anshuman" />
+          <span class="card-name">Anshuman</span>
+          <span class="card-role">Co-founder & CTO, Scaler</span>
+        </label>
+        <label class="card" data-person="abhimanyu">
+          <input type="radio" name="person" value="abhimanyu" />
+          <span class="card-name">Abhimanyu</span>
+          <span class="card-role">Co-founder, Scaler</span>
+        </label>
+      </section>
+
+      <section class="chat">
+        <div id="messages" class="messages" aria-live="polite"></div>
+
+        <form id="form" class="composer">
+          <textarea
+            id="query"
+            placeholder="Ask your mentor anything... (Ctrl/Cmd+Enter to send)"
+            rows="3"
+            required
+          ></textarea>
+          <div class="composer-row">
+            <div class="api-config">
+              <label for="apiUrl">Backend URL</label>
+              <input
+                id="apiUrl"
+                type="url"
+                placeholder="http://localhost:3000"
+              />
+            </div>
+            <button id="send" type="submit">Ask</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
