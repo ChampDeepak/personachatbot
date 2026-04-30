@@ -1,8 +1,8 @@
 # Persona Based Chatbot
 
-Ask Kshitij, Anshuman, or Abhimanyu anything. Made using Bun + Groq backend, static HTML/CSS/JS frontend.
+This project demonstrates a persona based chatbot which provides three personas: Kshitij, Anshuman, or Abhimanyu. Made using Bun + Groq at backend and static HTML/CSS/JS at frontend.
 
-**Live:** _add deployed link here_
+**Deployed Link:** [link](https://champdeepak.github.io/personachatbot/)
 
 ## Setup
 
@@ -18,9 +18,5 @@ cd frontend
 python3 -m http.server 5173
 ```
 
-Open the frontend, set Backend URL to your server, ask away.
+Open the frontend, set Backend URL to your server and start chatting.
 
-## Deploy
-
-- **Frontend:** push `frontend/` to GitHub Pages or `vercel deploy frontend/`.
-- **Backend:** any Bun host (Railway / Fly / Render). Set `GROQ_API_KEY` and `ALLOWED_ORIGIN`.
