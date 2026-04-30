@@ -4,22 +4,22 @@ const PERSON_LABELS = {
   abhimanyu: "Abhimanyu",
 };
 
-const DEFAULT_API_URL = "http://localhost:3000";
+const DEFAULT_API_URL = "https://personachatbot-s2su.onrender.com";
 
 const $messages = document.getElementById("messages");
 const $form = document.getElementById("form");
 const $query = document.getElementById("query");
 const $send = document.getElementById("send");
-const $apiUrl = document.getElementById("apiUrl");
+// const $apiUrl = document.getElementById("apiUrl");
 
-const savedApiUrl = localStorage.getItem("apiUrl") || DEFAULT_API_URL;
-$apiUrl.value = savedApiUrl;
-$apiUrl.addEventListener("change", () => {
-  localStorage.setItem("apiUrl", $apiUrl.value.trim() || DEFAULT_API_URL);
-});
+// const savedApiUrl = localStorage.getItem("apiUrl") || DEFAULT_API_URL;
+// $apiUrl.value = savedApiUrl;
+// $apiUrl.addEventListener("change", () => {
+//   localStorage.setItem("apiUrl", $apiUrl.value.trim() || DEFAULT_API_URL);
+// });
 
 function getApiBase() {
-  return ($apiUrl.value.trim() || DEFAULT_API_URL).replace(/\/+$/, "");
+  return  DEFAULT_API_URL.replace(/\/+$/, "");
 }
 
 function getSelectedPerson() {
